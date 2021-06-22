@@ -1,5 +1,9 @@
 ## Instagram Login Page
 
+# Screenshot
+
+![](./screenshot.jpeg)
+
 #Assignment
  The task was to create an app using XML of a login page - replicate any login page or design your own.
 
