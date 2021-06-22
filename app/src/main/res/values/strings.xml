@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="app_name_main">Instagram</string>
+    <string name="usernameOrPhone">Username or Phone Number</string>
+    <string name="password">Password</string>
+    <string name="appLogin">Log in</string>
+    <string name="forgotPassword">Forgotten your password ?</string>
+    <string name="loginHelp">Get help with logging in</string>
+    <string name="or">OR</string>
+    <string name="loginWithFb">Log In with Facebook</string>
+    <string name="notAccount">Donot have account ?</string>
+    <string name="appSignup">Sign up</string>
+    <string name="appLanguage">English (UK)</string>
+    <string name="appArrow">Arrow</string>
+    <string name="facebookImage">Facebook Image</string>
+</resources>

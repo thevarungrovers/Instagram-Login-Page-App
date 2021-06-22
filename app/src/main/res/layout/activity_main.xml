@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_effect"
+    >
+
+<!--language-->
+    <RelativeLayout
+        android:id="@+id/language_container_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/languageName_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appLanguage"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/languageDownArrow_image_id"
+            android:layout_toEndOf="@+id/languageName_text_id"
+            android:layout_marginStart="5sp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/appArrow"
+            android:src="@drawable/arrow"
+            />
+    </RelativeLayout>
+
+
+<!--    App name-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        >
+        <TextView
+            android:id="@+id/appName_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/app_name_main"
+            android:textSize="40sp"
+            />
+    </RelativeLayout>
+
+
+<!-- Login section-->
+    <RelativeLayout
+        android:id="@+id/login_container_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/username_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usernameOrPhone"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:inputType="text"
+            android:layout_margin="20sp"
+            android:padding="15sp"
+            android:autofillHints="false"
+            />
+
+        <EditText
+            android:id="@+id/password_input_id"
+            android:layout_below="@+id/username_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="15sp"
+            android:inputType="textPassword"
+            android:layout_margin="20sp"
+            android:autofillHints="false"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:layout_below="@+id/password_input_id"
+            android:id="@+id/login_Button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="@string/appLogin"
+            android:background="#0abde3"
+            />
+
+    </RelativeLayout>
+
+<!--   Login help     -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+            <TextView
+                android:id="@+id/forgotPassword_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgotPassword"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/loginHelp_text_id"
+                android:layout_toEndOf="@+id/forgotPassword_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginHelp"
+                android:textColor="@color/blue"
+                android:layout_marginStart="5sp"
+                />
+    </RelativeLayout>
+
+<!--  OR  -->
+    <LinearLayout
+        android:id="@+id/or_container_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/or_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:layout_marginTop="15sp"
+            />
+    </LinearLayout>
+
+
+
+
+<!-- Facebook  -->
+    <LinearLayout
+        android:id="@+id/facebook_container_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/facebook_Image_id"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/facebook"
+            android:contentDescription="@string/facebookImage"
+            android:layout_marginTop="15sp"
+            />
+
+        <TextView
+            android:id="@+id/loginWithFb_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginWithFb"
+            android:textSize="12sp"
+            android:textColor="@color/blue"
+            android:layout_marginTop="15sp"
+            />
+    </LinearLayout>
+
+<!-- sign up -->
+    <LinearLayout
+        android:id="@+id/signup_container_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/notAccount_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notAccount"
+            android:textSize="12sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/signup_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appSignup"
+            android:textSize="12sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
